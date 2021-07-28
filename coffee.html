@@ -8,28 +8,38 @@
 
   <!-- Add a CSS file here -->
   <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/2ba0796c8e.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
   
-  <p>This is coffee page</p>
+  <div class="main-container">
+    <p style="font-size: 30px; font-family: 'Lato';">Let's have a Coffee
+      <i class="fa fa-coffee" aria-hidden="true" style="font-size: 40px; vertical-align: middle;"></i>
+    </p>
 
-  <form
-    action="https://formspree.io/f/mzbyjzgy"
-    method="POST"
-  >
-    <label>
-      Your email:
-      <input type="email" name="_replyto">
-    </label>
-    <label>
-      Your message:
-      <textarea name="message"></textarea>
-    </label>
+    <form
+      action="https://formspree.io/f/mzbyjzgy"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <input type="email" name="_replyto" required>
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" required></textarea>
+      </label>
 
-    <!-- your other form fields go here -->
+      <!-- your other form fields go here -->
 
-    <button type="submit">Send</button>
-  </form>
+      <button class="submit-btn" type="submit">Send</button>
+    </form>
+
+    <div style="margin-top: 50px">
+      <a href="index.html">Home</a>
+    </div>
+  </div>
   
 </body>
 </html>
